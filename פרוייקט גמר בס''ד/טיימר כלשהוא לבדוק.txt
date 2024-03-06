@@ -1,0 +1,26 @@
+>this.worker = new Worker('worker.js');
+
+this.worker.onmessage = () => {
+    //console.log('timer fire');
+
+    this.timer--;
+    this.titleService.setTitle(" POMODOROME (" + this.displayTime + ")");
+    var currentDate = new Date();
+    var difference = (currentDate - startDate) / 1000;
+    var displayTimer = starting_timer - this.timer;
+   
+    if (difference > displayTimer + 1) {
+       
+        this.timer -= Math.round(difference) - displayTimer + 1
+    }
+
+
+    if (!this.isRunning) return;
+    if (this.timer > 0 && this.isRunning) {
+       
+    }
+    else if (this.isRunning)
+        this.onPhaseChange();
+
+   
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Lumanosimo;
+    src: url("../../packages/fonts/Lumanosimo/Lumanosimo-Regular.ttf");
+}
+@font-face {
+    font-family: Amatic_SC;
+    src: url("../../packages/fonts/Amatic_SC/AmaticSC-Regular.ttf");
+}
+@font-face {
+    font-family: GadiAlmogAlefAlefAlef;
+    src: url("../../packages/fonts/GadiAlmogAlefAlefAlef/GadiAlmogAlefAlefAlef/otf/gadi-almog-regular-aaa.otf");
+}
+@font-face {
+    font-family: DanayadAlefAlefAlef;
+src: url("../../packages/fonts/dana-yad-alefalefalef/dana-yad-alefalefalef/DanaYadAlefAlefAlef-Normal.otf");
+}
+@font-face {
+    font-family:VarelaRound-Regular;
+    src: url("../../packages/fonts/Varela_Round/VarelaRound-Regular.ttf");
+}
+/* ------------------------------------------------------טיימר------------------------------------------------- */
+#timer{
+    color: #ffffff;
+    font-family:  Amatic_SC;
+    font-size: 320px;
+    /* padding-top: 0.5%; */
+    text-shadow:4px -1px 13px  #00ffd5;
+}
+
+
+/* ------------------------------------------------------ההגרלה מוטמעת------------------------------------------------- */
+
+#lottery-text>h1{
+    opacity: 0.15;
+    color: #ffffff;
+    font-family:VarelaRound-Regular;
+    font-size: 400px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-right: 3%;
+    z-index: 99;
+    position: fixed;
+    top: 15%;
+}
+
+/* ------------------------------------------------------טקסט מתחת לטיימר------------------------------------------------- */
+
+
+/* ----------------------------------כפתורים------------------------------------------------------------------ */
+
+#entrance-sentence-valenteers>h1{
+    margin-top:40%;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    font-family:VarelaRound-Regular;
+}
+#entrance-sentence-valenteers>h2{
+    margin-top:10%;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    font-family:VarelaRound-Regular;
+}
+#enter-Recognise-Users>form>button{
+    margin-top:4%;
+}
+
+#entrance-sentence-valenteers>form > button,#enter-Recognise-Users>form>button {
+    width: 800px;
+    text-align: center;
+    font-size: 60px;
+    color:#00ffd5dc;
+    font-family:VarelaRound-Regular;
+    cursor:pointer;
+    border:#00ffd5dc 3px solid;
+    background-color: #000000;
+    margin-right: 23%;
+    border-radius: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%; 
+    animation: homepage2 1.2s infinite;
+    animation-fill-mode: both;
+    z-index: 100;
+    position: relative;
+}
+@keyframes homepage2 {
+    0% {
+        
+        color:#00ffd5dc;
+    }
+    50%{
+        color:#00ffd5dc;
+    }
+
+    100% {
+        color:#000000;
+    }
+}
+

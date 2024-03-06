@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרטי משתמש</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+</head>
+<body onload="onPageLoad()"  >  
+    <nav>
+        <div id="logo_topnav">
+            <a href="../../pages/home/home.html"><img   src="../../assets/לוגו לתת זה לקבל.png" ></a>
+       </div>
+        <ul>
+            <li id="homeT"><a href="../../pages/home/home.html">דף הבית</a></li>
+            <li><a href="../../pages/about/about.html">אודות</a></li>
+            <li><a href="../../pages/products/products.html">קטלוג מוצרים</a> </li>
+            <li> <a href="../../pages/questions/questions.html">שאלות נפוצות</a></li>
+            <li><a href="../../pages/login/login.html">התחברות</a></li>
+            <li><a href="../../pages/personal-area/personal-area.html">אזור אישי</a></li>
+            <li><div id="hello" ></div></li>
+        </ul>
+     </div>
+    </nav>
+    <h1 id="tile-personalArea">להצגת הפרטים האישיים <br> אנא הכנס מספר תעודת זהות:</h1>
+    <form name="formRecogniseUser" >
+                <input type="number"  id="id-enter" placeholder="הכנס מספר זהות" required>
+                <br>
+                <br>
+                <button type="submit"  id="ideEnterBtn" class="btn">אישור</button>
+    </form>
+<div id="welcomeToUser"></div>
+<div id="Userfullform"></div>
+<div class="iconName" class="pratim" id="1"></div></div><div class="iconId" class="pratim" id="2"></div>
+<div class="iconMail" class="pratim" id="3"></div>
+<div class="iconPhone" class="pratim" id="4"></div>
+<div class="iconAdress" class="pratim" id="5"></div>
+<div class="iconAge" class="pratim" id="6"></div>
+<div class="iconType" class="pratim" id="7"></div>
+<div class="iconHour" class="pratim" id="8"></div>
+
+<div id="points"></div>
+</body>
+<script src="../../styles/localstorage.js"></script>
+<script src="../../pages/home/user.js"></script>
+</html>

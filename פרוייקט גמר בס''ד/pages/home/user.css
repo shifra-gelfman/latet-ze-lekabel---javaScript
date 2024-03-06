@@ -1,0 +1,91 @@
+/* -----------------------------------------------כותרת-תעודת זהות--------------------------------------------------------- */
+#tile-personalArea {
+    margin-top: 20%;
+    color: #00ffd3;
+    font-family:VarelaRound-Regular;
+    text-align: center;
+}
+
+#id-enter {
+    background-color: transparent;
+    color: #00ffd3;
+    font-family:VarelaRound-Regular;
+    font-size: 15px;
+    width: 30%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00ffd3;
+}
+
+.btn {
+    background-color: #000000;
+    color: #00ffd3;
+    font-family:VarelaRound-Regular;
+    font-size: 25px;
+    border-radius: 70px;
+    padding: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ------------------------------------------------------הצגת הפרטים האישיים--------------------------------------------------- */
+
+#welcomeToUser {
+    text-align: center;
+    font-family:VarelaRound-Regular;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 4%;
+}
+
+#Userfullform {
+    text-align: center;
+    font-family:VarelaRound-Regular;
+    font-size: 30px;
+    color: #00ffd3;
+    margin-top:0.5%;
+}
+
+.iconName,
+.iconId,
+.iconMail,
+.iconPhone,
+.iconAge,
+.iconAdress,
+.iconType,
+.iconHour {
+    font-family:VarelaRound-Regular;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 2%;
+    margin-right: 27.8%;
+}
+
+.iconName>i,
+.iconId>i,
+.iconMail>i,
+.iconPhone>i,
+.iconAge>i,
+.iconAdress>i,
+.iconType>i,
+.iconHour>i{
+    color: #00ffd3;
+    font-size: 28px;
+}
+#points {
+    font-family:VarelaRound-Regular;
+    font-size: 40px;
+    color: #00ffd3;
+    margin-top: 7%;
+    text-align: center;
+}

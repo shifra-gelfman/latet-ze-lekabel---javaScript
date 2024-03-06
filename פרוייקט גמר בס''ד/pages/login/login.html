@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../packages/bootstrap-3.4.1-dist/css/bootstrap-theme.min.css">
+
+</head>
+
+<body onload="onPageLoad()">
+    <nav>
+        <div id="logo_topnav">
+            <a href="../../pages/home/home.html"><img src="../../assets/לוגו לתת זה לקבל.png"></a>
+        </div>
+        <ul>
+            <li><a href="../../pages/home/home.html">דף הבית</a></li>
+            <li><a href="../../pages/about/about.html">אודות</a></li>
+            <li><a href="../../pages/products/products.html">קטלוג מוצרים</a> </li>
+            <li> <a href="../../pages/questions/questions.html">שאלות נפוצות</a></li>
+            <li id="loginT"><a href="../../pages/login/login.html">התחברות</a></li>
+            <li><a href="../../pages/personal-area/personal-area.html">אזור אישי</a></li>
+            <li><div id="hello"> </div></li>
+        </ul>
+        
+    </nav>
+    <div id="title-login">
+        <h1>לתת, זה לקבל!</h1>
+        <p>לאחר תקופה ארוכה של נתינה מהלב הגיע הזמן למלא מאגרים!
+            <br> כדי להתחיל, נשמח להכיר אותך :)
+            <br> כמות הנקודות להשתתפות בהגרלה תלויה במשך שעות ההתנדבות
+            <br> אז באו נתחיל:
+        </p>
+    </div>
+
+    <form name="formNewUser">
+        <h1>פרטים אישיים:</h1>
+        <br>
+        <br>
+        <label for="zachar" id="min">מין</label>
+        <br>
+        <br>
+        <div id="radio-min">
+        <input type="radio" name="radio1" value="זכר">
+        <label for="zachar">זכר</label>
+        <input type="radio" name="radio1" value="נקבה" checked>
+        <label for="nekeva">נקבה</label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <label for="firstName">שם פרטי</label>
+        <br>
+        <input id="firstName" type="text" placeholder="הכנס שם פרטי" required>
+        <br>
+        <br>
+        <label for="lastName">שם משפחה</label>
+        <br>
+        <input id="lastName" type="text" placeholder="הכנס שם משפחה" required>
+        <br>
+        <br>
+        <label for="id">מספר זהות</label>
+        <br>
+        <input id="id" type="text" placeholder="הכנס מספר זהות" required>
+        <br>
+        <br>
+        <label for="phone">נייד</label>
+        <br>
+        <input id="phone" type="text" placeholder=" הכנס מספר נייד " required>
+        <br>
+        <br>
+        <label for="email">כתובת אימייל </label>
+        <br>
+        <input id="email" type="email" placeholder="הכנס כתובת אימייל" required>
+        <br>
+        <br>
+        <label for="adress">כתובת </label>
+        <br>
+        <input id="adress" type="text" placeholder="הכנס כתובת מגורים" required>
+        <br>
+        <br>
+        <label for="age">גיל</label>
+        <br>
+        <input id="age" type="number" placeholder="הכנס גיל" required>
+        <br>
+        <h1>פרטי התנדבות:</h1>
+        <br>
+        <br>
+        <label for="adress">תחום ההתנדבות </label>
+        <br>
+        <select id="fieldVolunteering">
+            <option value="families">סיוע למשפחות רווחה</option>
+            <option value="Hospitol">התנדבות בבתי חולים</option>
+            <option value="oldmen">סיוע לקשישים</option>
+            <option value="spacial-children">התנדבות במועדוניות לילדים מיוחדים</option>
+            <option value="learn-with-child">למידה עם ילדים מתקשים</option>
+        </select>
+        <br>
+        <br>
+        <label for="volenteersHour">שעות התנדבות בסה"כ:</label>
+        <br>
+        <input id="volenteersHour" type="number" placeholder="הכנס שעות התנדבות" required>
+        <br>
+        <div id="btns">
+            <button class="btn" type="reset">לאיפוס </button>
+            <button class="btnCheck" id="finishRegistration" class="btn" type="submit">לאישור הפרטים</button>
+        </div>
+    </form>
+
+</body>
+<script src="../../pages/login/login.js"></script>
+<script src="../../styles/localstorage.js"></script>
+
+</html>

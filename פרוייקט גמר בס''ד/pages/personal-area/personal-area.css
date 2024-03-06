@@ -1,0 +1,64 @@
+@font-face {
+    font-family:VarelaRound-Regular;
+    src: url("../../packages/fonts/Varela_Round/VarelaRound-Regular.ttf");
+}
+/* ---------------------------כותרת ---------------------------------- */
+#title{
+    font-family: VarelaRound-Regular;
+    text-shadow:1px 5px 8px #00ffd3;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    
+}
+#isal{ 
+    margin-top: 15%;
+   margin-right: 44.5%;
+    font-size: 150px;
+    color: #fff;
+    text-shadow:1px 5px 8px #00ffd3;
+
+}
+/* --------------------------------------שם לקוח+מספר נקודות---------------------------------- */
+#myCart{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+    font-family: VarelaRound-Regular;
+    font-size: 30px;
+    text-align: center;
+}
+#myCart>div{
+    color: #00ffd3;
+    font-family: VarelaRound-Regular;
+    margin-top: 1%;
+}
+
+/* ----------------------------------------------------רשימת הפרסים של הלקוח בסל הקניות--------------------------------------------------- */
+#prodList>div{
+    width: 75%;
+    margin-right: 12%;
+    margin-bottom: 1%;
+}
+#prodList>div>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 30px;
+    font-family: VarelaRound-Regular;
+    border: #00ffd3 3px solid;
+    border-radius: 5px;
+}
+#prodList>div>div>img{
+    border-radius: 5px;
+}
+/* -----------כפתור מחיקה----------- */
+#garbage{
+    color: #fff;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+

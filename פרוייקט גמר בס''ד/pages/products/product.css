@@ -1,0 +1,212 @@
+@font-face {
+    font-family: Amatic_SC;
+    src: url("../../packages/fonts/Amatic_SC/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lumanosimo;
+    src: url("../../packages/fonts/Lumanosimo/Lumanosimo-Regular.ttf");
+}
+
+@font-face {
+    font-family: VarelaRound-Regular;
+    src: url("../../packages/fonts/Varela_Round/VarelaRound-Regular.ttf");
+}
+
+/* ----------------------------------עיצוב לכל המוצרים בעמוד--------------------------------------------------------*/
+#prod {
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#prod>li {
+    color: #ffff;
+    font-size: 30px;
+    font-family: VarelaRound-Regular;
+    border: solid 5px #00ffd3;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    width: 20%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#prod>li>#p {
+    color: #00ffd3;
+    font-family: Amatic_SC;
+    padding: 1.5%;
+}
+
+li>img {
+    border-radius: 15px;
+}
+
+/* li>img:hover {} */
+
+#prod>li>button {
+    background-color: #00ffd3;
+    color: #000000;
+    border: transparent;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5%;
+    font-size: 20px;
+    font-family: VarelaRound-Regular;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------עיצוב לחלון הרחבה---------------------------------------------------- */
+#square {
+    direction: rtl;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    padding-top: 80px;
+    border: #00ffd3 solid 2px;
+    border-radius: 25px;
+
+}
+
+/* כל מה שנמצא ב SQUARE */
+#square>div {
+    color: #ffff;
+    font-size: 40px;
+    margin-right: 0%;
+    display: flex;
+    gap: 5%;
+    font-family: VarelaRound-Regular;
+
+}
+
+/* תמונה */
+#square>div>img {
+    margin-right: 12%;
+    border-radius: 10px;
+}
+
+/* כולל את המלל  */
+#des-price {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* מחיר */
+#square>div>#des-price>#p {
+    color: #00ffd3;
+    font-size: 40px;
+    font-family: Amatic_Sc;
+    border-top: #00ffd3 solid 1px;
+    margin-bottom: 20%;
+}
+
+/* תאור מוצר */
+#square>div>#des-price>p {
+    font-size: 25px;
+}
+
+/* כפתור סגירה */
+#square>i {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 250;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 35px;
+    color: #00ffd3;
+}
+
+/* כפתור הוספה לסל */
+#square>div>div>span {
+    color: #00ffd3;
+    font-size: 30px;
+    border-radius: 25px;
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    width: 80%;
+    height: 10%;
+    padding-top: 1%;
+    padding-bottom: 2.5%;
+    cursor: pointer;
+
+}
+
+/* אייקון סל */
+span>i {
+    width: 40px;
+    height: 40px;
+    color: #00ffd3;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* --------------------------פילטר--------------- */
+/* #filter{   
+    margin-top: 15%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#filter>p{
+    margin-right: 10%;
+    color: #00ffd3;
+    font-size: 35px;
+    font-family:VarelaRound-Regular;
+}
+#filter>label{
+    color: #4e5050;
+    font-size: 25px;
+    font-family:VarelaRound-Regular;
+}
+#points{
+    background-color:black;
+    color: #00ffd3;
+    font-family:VarelaRound-Regular;
+    font-size:20px;
+    width: 30%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00ffd3;
+    border-radius: 10px;
+} */
+#filter {
+    margin-top: 15%;
+    margin-right: 25%;
+    background-color: transparent;
+    color: #00ffd3;
+    font-family: VarelaRound-Regular;
+    font-size: 15px;
+    width: 40%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #00ffd3;
+}
+button{
+    background-color:transparent;
+    border: transparent;
+}
+i{
+    font-size:30px;
+    color: #00ffd3;
+}
